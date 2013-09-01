@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cxnArray">
+        <item>Bluetooth</item>
+        <item>Wi-Fi</item>
+    </string-array>
+
+    <string-array name="txArray">
+        <item>Direct Drive</item>
+        <item>Messages Only</item>
+    </string-array>
+
+    <string-array name="dispArray">
+        <item>Scroll All</item>
+        <item>Scroll Long Messages Only; 10-Second Cycle</item>
+        <item>No Scroll; 10-Second Cycle</item>
+        </string-array>
+</resources>

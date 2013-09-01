@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+       <PreferenceCategory
+        android:title="Connection Settings">
+        <ListPreference
+            android:name="cxn_method"
+            android:summary="Choose how you wish to connect to the LEDgoes matrix."
+            android:title="Connection Method"
+            android:key="cxnPref"
+            android:defaultValue="Bluetooth"
+            android:entries="@array/cxnArray"
+            android:entryValues="@array/cxnArray" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="WiFi Settings">
+        <EditTextPreference
+            android:name="Recipient Host/IP"
+            android:summary="Enter the hostname or IP address of the LEDgoes host:"
+            android:defaultValue="192.168.0.101"
+            android:title="Hostname or IP Address"
+            android:key="ipPref" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Bluetooth Settings">
+        <Preference
+            android:title="Scan for Bluetooth Devices"
+            android:summary="This works almost like a button"
+            android:key="customPref" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Message Settings">
+        <ListPreference
+            android:name="tx_method"
+            android:summary="Choose how this program will send messages to the LEDgoes matrix.  'Direct Drive' means your Android device will be responisble for sending all the signals to animate the matrix; this is bound to consume a lot of battery. 'Messages Only' means your Android will send only the text of the message, and you have a heart controller that will animate the matrix."
+            android:title="Transmission Method"
+            android:key="txPref"
+            android:defaultValue="Messages Only"
+            android:entries="@array/txArray"
+            android:entryValues="@array/txArray" />
+        <ListPreference
+            android:name="tx_method"
+            android:summary="Choose how the messages will appear on the board."
+            android:title="Display Method"
+            android:key="dispPref"
+            android:defaultValue="Scroll All"
+            android:entries="@array/dispArray"
+            android:entryValues="@array/dispArray" />
+        </PreferenceCategory>
+</PreferenceScreen>
