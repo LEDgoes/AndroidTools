@@ -6,7 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MessageActivity" >
+    tools:context=".MessageActivity"
+    android:background="#010100">
 
     <Button
         android:id="@+id/button1"
@@ -15,7 +16,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
-        android:text="Connect to Bluetooth Serial" />
+        android:text="Connect to Bluetooth Serial"
+        android:background="#2cbdff"
+        android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/lblConnectedTo"
@@ -23,7 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
-        android:text="Disconnected" />
+        android:text="Disconnected"
+        android:textColor="#d4d4d4" />
 
     <TextView
         android:id="@+id/textView1"
@@ -32,7 +36,8 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/lblConnectedTo"
         android:layout_marginTop="20dp"
-        android:text="Enter your message below:" />
+        android:text="Enter your message below:"
+        android:textColor="#ffffff" />
 
     <EditText
         android:id="@+id/editText1"
@@ -40,7 +45,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView1"
-        android:ems="10" >
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:padding="10px">
 
         <requestFocus />
     </EditText>
@@ -49,17 +56,19 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText1"
-        android:layout_alignBottom="@+id/editText1"
         android:layout_toRightOf="@+id/editText1"
-        android:text="Send" />
+        android:text="Send"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignRight="@+id/button1"
+        android:background="#03ef00"
+        android:padding="10px" />
 
     <ListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/button2" >
+        android:layout_below="@+id/button2">
     </ListView>
 
 </RelativeLayout>
